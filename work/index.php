@@ -1,5 +1,13 @@
 <?php
-$message = 'こんにちは！' . date('l');
+$n = mt_rand(1, 3);
+
+if ($n === 1){
+  $message = '見習いです';
+} elseif($n === 2){
+  $message = '勉強中です';
+}else{
+  $message = 'ランダムです';
+}
 ?>
 
 <!DOCTYPE html>
